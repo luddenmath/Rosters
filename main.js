@@ -1,4 +1,11 @@
+console.log("main.js loaded");
+
+window.onerror = function(msg, url, line, col, err) {
+    console.error("ERROR:", msg, "line", line, err);
+};
+
 (async function () {
+    console.log("Entered async function");
 
 $("#toolbarButtonClassChooser").click();
 
